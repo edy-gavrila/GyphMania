@@ -3,6 +3,7 @@ const form = document.querySelector("form");
 
 const findGyph = async (searchString) => {
   try {
+    
     const response = await fetch(
       `https://api.giphy.com/v1/gifs/translate?s=${searchString}&api_key=kO3uOTLWzAIMjLW1Eq3gZRoIQ89zWY8p`
     );
@@ -14,11 +15,12 @@ const findGyph = async (searchString) => {
     return {
       url: data.data.images.original.url,
     };
+
   } catch (error) {
     console.error(error);
     return { error: error };
   }
-};
+}
 
 const getGyphAndSet = async (searchStr = "cats") => {
   const result = await findGyph(searchStr);
