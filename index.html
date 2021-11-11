@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Gyphs Mania!</title>
   </head>
@@ -11,19 +17,18 @@
     <nav>
       <h1 class="app-title">Gyph Mania!</h1>
       <form>
-        <input
-          type="text"
-          id="search"
-          placeholder="Search for gyphs..."
-          
-        />
-        <button>Search</button>
+        <input type="text" id="search" placeholder="Search for gyphs..." />
+        <button><i class="fas fa-search"></i></button>
       </form>
     </nav>
     <content>
       <img id="display" src="#" />
     </content>
-    <footer class="footer">&copy; 2021 Eduard Gavrila</footer>
+    <footer class="footer">
+      <span>&copy; 2021 Eduard Gavrila</span>
+      <a href="#" class="footer-links"><i class="fab fa-github"></i></a>
+      <a href="#" class="footer-links"><i class="fab fa-twitter"></i></a>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

@@ -74,6 +74,19 @@ form button:active {
   transform: scale(0.98);
 }
 
+.footer {
+  text-align: right;
+  padding-right: 10px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: white;
+}
+
 @media (max-width: 576px) {
   .app-title {
     font-size: 1.2rem;
@@ -88,7 +101,7 @@ form button:active {
   .app-title {
     display: none;
   }
-  nav{
+  nav {
     justify-content: right;
     padding: 1rem;
   }

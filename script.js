@@ -9,7 +9,6 @@ const findGyph = async (searchString) => {
     );
     if (!response.ok) throw new Error("Network Error");
     const data = await response.json();
-    console.log(data);
     if (!data.data.images)
       throw new Error("No results for the given search string!");
     return {
